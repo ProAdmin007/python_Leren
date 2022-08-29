@@ -23,14 +23,18 @@ print(naam + " wat zou je graag willen bestellen van het menu?\n" + menu)
 
 bestelling = input()
 
-prijs = 10
+prijs = 0
 
 if bestelling == "Zwarte koffie":
     prijs = 3
 elif bestelling == "Cappucino":
     prijs = 10
 elif bestelling == "Latte":
-    prijs = 9
+    slagroom = input("Wil je er slagroom op? Kost 3 euro extra!\n")
+    if slagroom == "Ja":
+        prijs = 11
+    else:
+        prijs = 9
 elif bestelling == "Espresso":
     prijs = 5
 elif bestelling == "Frappuccino":
